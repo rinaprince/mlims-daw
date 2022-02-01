@@ -1,0 +1,20 @@
+601-simple-expressions.txt XPath - Exercise 1 - Simple expressions.
+a. Name of Institute:
+/secondary-school/name
+b. School website:
+/secondary-school/web
+c. Name of Training Cycles:
+/secondary-school/cycles/cycle/name
+d. Acronyms by which the Formative Cycles are known:
+//@id
+e.Years in which the title decrees of the Formative Cycles were published:
+//@year
+f.Intermediate Training Cycles (it is about obtaining the complete element):
+//cyles [last()]
+//cycles [name="Microcomputer Systems and Networks"] and [decreeTitle/@year="2008"]
+g. Name of Higher Level Training Cycles:
+//cycles[grade="Higher"]
+h. Name of Training Cycles prior to 2010:
+//decreeTitle[@year<2010]/../
+i. Name of the Formative Cycles of 2008 or 2010:
+//cicles [decreeTitle"2009"] or [decreeTitle="2008"]
