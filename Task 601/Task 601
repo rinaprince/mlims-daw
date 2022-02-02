@@ -1,20 +1,29 @@
 601-simple-expressions.txt XPath - Exercise 1 - Simple expressions.
 a. Name of Institute:
-/secondary-school/name
+/secondary-school/name (well done)
 b. School website:
-/secondary-school/web
+/secondary-school/web (correction ---> /secondary-school/web/text())
 c. Name of Training Cycles:
-/secondary-school/cycles/cycle/name
+/secondary-school/cycles/cycle/name (correction ---> /secondary-school/cycles/cycle/name/text())
 d. Acronyms by which the Formative Cycles are known:
-//@id
+//@id (well done)
 e.Years in which the title decrees of the Formative Cycles were published:
-//@year
+//@year (well done)
 f.Intermediate Training Cycles (it is about obtaining the complete element):
-//cyles [last()]
-//cycles [name="Microcomputer Systems and Networks"] and [decreeTitle/@year="2008"]
+//cycle [last()]
+//cycle [name="Microcomputer Systems and Networks"] and [decreeTitle/@year="2008"]
+(correction ---> //cycle [grade="Intermediate"]
+                 //grade[.="Intermediate"]/..)
 g. Name of Higher Level Training Cycles:
 //cycles[grade="Higher"]
+(correction ---> //cycles[grade="Higher"]/name
+                 //cycles[.="Higher"]/../name)
 h. Name of Training Cycles prior to 2010:
 //decreeTitle[@year<2010]/../
+(correction ---> //@year[.<year2010]/../../name
+                 //cycle/name[../decreeTitle@year<2010]
+                 //cycle[decreeTitle/@year<2010]/name)
 i. Name of the Formative Cycles of 2008 or 2010:
-//cicles [decreeTitle"2009"] or [decreeTitle="2008"]
+//cycle [decreeTitle"2009"] or [decreeTitle="2008"]
+(correction ---> //@year[.!=2009]/../../name
+                 //@year[.=2008 or .=2010]/../../name)
