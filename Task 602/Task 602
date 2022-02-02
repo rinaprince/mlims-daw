@@ -1,0 +1,14 @@
+602.XPath - Exercise 2 - Simple expressions.
+a. Name of the modules taught at the School:
+//name/text()
+b. Name of the NISA cycle modules:
+//module[cycle="NISA"]/text()
+c. Name of the modules taught in the second year of any cycle:
+//module[course="2"]/name
+d. Name of the modules of less than 5 hours per week:
+//hoursWeekly[.<5]
+e. Name of the modules taught in the first NISA course:
+//module[cycle="NISA"]/../name
+//module[course="1"]/text()
+f. Weekly hours of modules of more than 3 hours per week:
+//hourWeekly[.>3]
