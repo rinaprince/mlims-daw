@@ -3,12 +3,21 @@ a. Name of the modules taught at the School:
 //name/text()
 b. Name of the NISA cycle modules:
 //module[cycle="NISA"]/text()
+(correction ---> //cycle[.="NISA"]/../name/text()
+                 //module[cycle="NISA"]/name/text())
 c. Name of the modules taught in the second year of any cycle:
 //module[course="2"]/name
+(correction ---> //name[../course="2"]/text()
+                 //course[.="2"]/../name/text())
 d. Name of the modules of less than 5 hours per week:
-//hoursWeekly[.<5]
+//hoursWeekly[.<5]/text()
+(correction ---> //module/hoursweekly[.<5]/../name/text()
+                 //name[../hourseweekly<5]/text())
 e. Name of the modules taught in the first NISA course:
-//module[cycle="NISA"]/../name
+//module[cycle="NISA"]/../name/text()
 //module[course="1"]/text()
+(correction ---> //module[cycle="NISA" and course="1"]/text()
+                 //cycle[.="NISA" and ../course="1"]/..name/text())
 f. Weekly hours of modules of more than 3 hours per week:
-//hourWeekly[.>3]
+//hoursWeekly[.>3]/text()
+(correction ---> //name[../hoursWeekly >3]/../hoursWeekly/text())
