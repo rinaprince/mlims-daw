@@ -1,0 +1,27 @@
+Task 603:
+XSLT (1) - Exercise 1
+
+Without tags:
+
+ <xsl:template match="//cyles">
+     <xsl:value-of select="name"/>
+  </xsl:template>
+
+XSLT (1) - Exercise 2
+Párrafos:
+
+ <xsl:template match="//cycles">
+     <p><xsl:value-of select="name"/></p>
+  </xsl:template>
+
+XSLT (1) - Exercise 3
+List:
+
+ <xsl:template match="//cycles">
+     <li><xsl:value-of select="name"/></li>
+  </xsl:template>
+
+XSLT (1) - Exercise 4
+
+Table:
+
