@@ -6,22 +6,74 @@ Without tags:
  <xsl:template match="//cyles">
      <xsl:value-of select="name"/>
   </xsl:template>
+  
+  (correction ---> <xsl:template match="name">
+                   </xsl:template>
+                   <xsl:template match="web">
+                   </xsl:template>
+                   <xsl:template match="//cyle">
+                        <xsl:value-of select="name"/>
+                   </xsl:template>)
 
 XSLT (1) - Exercise 2
 Párrafos:
 
- <xsl:template match="//cycles">
+ <xsl:template match="//cycle">
      <p><xsl:value-of select="name"/></p>
   </xsl:template>
+  
+  (correction ---> <xsl:template match="/">
+                   <html>
+                    <body>
+                        <xsl:apply-templates />
+                    </body>
+                    </html>
+                   <xsl:template match="name">
+                   </xsl:template>
+                   <xsl:template match="web">
+                   </xsl:template>
+                   <xsl:template match="//cycle">
+                        <p><xsl:value-of select="name"/></p>
+                   </xsl:template>)
 
 XSLT (1) - Exercise 3
 List:
 
- <xsl:template match="//cycles">
+ <xsl:template match="//cycle">
      <li><xsl:value-of select="name"/></li>
   </xsl:template>
+  
+  (correction ---> <xsl:template match="/">
+                   <html>
+                    <body>
+                        <xsl:apply-templates />
+                    </body>
+                    </html>
+                   <xsl:template match="name">
+                   </xsl:template>
+                   <xsl:template match="web">
+                   </xsl:template>
+                   <xsl:template match="//cycle">
+                        <li><xsl:value-of select="name"/></li>
+                   </xsl:template>)
 
 XSLT (1) - Exercise 4
 
 Table:
+
+(correction ---> <xsl:template match="/">
+                   <html>
+                    <body>
+                     <table border="1">
+                        <xsl:apply-templates />
+                     </table>
+                     </body>
+                    </html>
+                   <xsl:template match="name">
+                   </xsl:template>
+                   <xsl:template match="web">
+                   </xsl:template>
+                   <xsl:template match="//cycle">
+                        <td><tr><xsl:value-of select="name"/></td></tr>
+                   </xsl:template>)
 
