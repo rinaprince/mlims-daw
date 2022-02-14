@@ -1,21 +1,27 @@
 Task 604. XSLT Transformation:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+(there goes the activities from bellow)
+</xsl:stylesheet>
+
 Exercise 1. Paragraphs:
 <xsl:template match="/">
     <html>
         <body>
+            <h1><xsl:value-of select="secondary-school"></h1>
             <xsl:apply-templates />
         </body>
     </html>
-    <xsl:template match="secondary-school">
-        <h1><xsl:value-of select="name"></h1>
-    </xsl:template>
-    <xsl:template match="web">
-    </xsl:template>
-    <xsl:template match="//cycle">
-        <p><xsl:value-of select="name"/></p>
-    </xsl:template>
+</xsl:template>
+<xsl:template match="web">
+</xsl:template>
+<xsl:template match="cycle/name">
+    <p><xsl:value-of select="."/></p>
+</xsl:template>
     
 Exercise 2. List:
+<xsl:template match="/">
     <html>
         <body>
             <xsl:apply-templates />
@@ -30,7 +36,15 @@ Exercise 2. List:
     <xsl:template match="//cycle">
         <li><xsl:value-of select="name" /></li>
     </xsl:template>
+</xsl:template>
     
 Exercise 3. Table:
-
-
+<xsl:template match="/">
+    <html>
+        <body>
+            <table border="1">
+                <xsl:apply-templates />
+            </table>
+        </body>
+    </html>
+</xsl:template>
