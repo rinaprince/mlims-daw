@@ -24,27 +24,35 @@ Exercise 2. List:
 <xsl:template match="/">
     <html>
         <body>
+            <h1><xsl:value-of select="name"></h1>
             <xsl:apply-templates />
         </body>
     </html>
-    <xsl:template match="secondary-school">
-        <h1><xsl:value-of select="name"></h1>
-    </xsl:template>
-    <xsl:template match="secondary-school">
-        <a><xsl:value-of select="web"></a>
-    </xsl.template>
-    <xsl:template match="//cycle">
-        <li><xsl:value-of select="name" /></li>
-    </xsl:template>
 </xsl:template>
+<xsl:template match="secondary-school">
+    <a><xsl:value-of select="web"></a>
+</xsl:template>
+<xsl:template match="cycle/name">
+    <li><xsl:value-of select="." /></li>
+</xsl:template>
+
     
 Exercise 3. Table:
 <xsl:template match="/">
     <html>
         <body>
-            <table border="1">
-                <xsl:apply-templates />
-            </table>
+                <h1><xsl:value-of select="name"></h1>
+                <xsl:apply-templates />            
         </body>
     </html>
+</xsl:template>
+<xsl:template match="secondary-school">
+    <a><xsl:value-of select="web"></a>
+</xsl:template>
+<xsl:template match="seconary-school">
+<table border="1">
+    <tr><th><xsl:value-of select="@NISA" /></th></tr>
+    <td><tr><xsl:value-of select="@DAW"/></td></tr>
+    <td><tr><xsl:value-of select="@MSN"/></td></tr>
+</table>
 </xsl:template>
