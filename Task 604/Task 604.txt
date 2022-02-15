@@ -28,16 +28,29 @@ Exercise 2. List:
 <xsl:template match="/">
     <html>
         <body>
-            <h1><xsl:value-of select="name"></h1>
+            <h1><xsl:value-of select="name" /></h1>
             <xsl:apply-templates />
         </body>
     </html>
 </xsl:template>
 <xsl:template match="secondary-school">
-    <a><xsl:value-of select="web"></a>
 </xsl:template>
-<xsl:template match="cycle/name">
-    <ul><li><xsl:value-of select="." /></li></ul>
+<xsl:template match="web">
+<p>Web page:<a>
+    <xsl:attribute name="href">
+        <xsl:value-of select="." />
+    </xsl:atributte>
+    <xsl:value-of select="." />
+</a>
+</p>
+</xsl:template>
+<xsl:template match="cycles">
+    <ul>
+        <xsl:apply-templates />
+    </ul>
+</xsl:template>
+<xsl:template match="cycle">
+    <li><xsl:value-of select="name" /></li>
 </xsl:template>
   
 Exercise 3. Table:
