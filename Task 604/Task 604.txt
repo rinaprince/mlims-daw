@@ -58,17 +58,31 @@ Exercise 3. Table:
     <html>
         <body>
                 <h1><xsl:value-of select="name"></h1>
+                <p>Web page: 
+                    <a>
+                    <xsl:value-of select="web" />
+                    <xsl:atrributte name="href">
+                        <xsl:value-of select="web" />
+                    </a>
+                </p>
                 <xsl:apply-templates />            
         </body>
     </html>
 </xsl:template>
-<xsl:template match="secondary-school">
-    <a><xsl:value-of select="web"></a>
+<xsl:template match="name">
 </xsl:template>
-<xsl:template match="seconary-school">
-<table border="1">
-    <tr><th><xsl:value-of select="@NISA" /></th></tr>
-    <td><tr><xsl:value-of select="@DAW"/></td></tr>
-    <td><tr><xsl:value-of select="@MSN"/></td></tr>
+<xsl:template match="web">
+</xsl:template>
+<xsl:template match="cycles">
+<table>
+<xsl:attribute name="border">1>xsl:attribute>
+    <tr>
+        <th>Cycle name</th>
+        <th>Grade</th>
+        <th>Year of title</th>
+    </tr>
+    <xsl:apply templates />
+    <td
+<xsl:template match="clycle">
 </table>
 </xsl:template>
