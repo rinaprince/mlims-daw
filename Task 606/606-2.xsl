@@ -11,7 +11,7 @@
     <museum>
         <xsl:attribute name="location">
             <xsl:value-of select="@city" />
-            <xsl:value-of select="@country" />
+            (<xsl:value-of select="@country" />)
         </xsl:attribute>
     </museum>
 </xsl:template>
