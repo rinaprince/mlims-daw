@@ -7,7 +7,7 @@
         </countries>
     </xsl:template>
 
-<xsl:template match="country">
+<xsl:template match="museum">
     <country>
         <xsl:attribute name="name">
             <xsl:value-of select="@country" />

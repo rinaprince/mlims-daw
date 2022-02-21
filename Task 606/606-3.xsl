@@ -7,7 +7,7 @@
         </cities>
     </xsl:template>
 
-<xsl:template match="city">
+<xsl:template match="museum">
     <city>
         <xsl:attribute name="name">
             <xsl:value-of select="@city" />
