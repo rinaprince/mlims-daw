@@ -9,9 +9,9 @@
 
 <xsl:template match="museum">
     <museum>
-        <name><xsl:value-of select="." /></name>
-        <city><xsl:value-of select="." /></city>
-        <country><xsl:value-of select="." /></country>
+        <name><xsl:value-of select="@name" /></name>
+        <city><xsl:value-of select="@city" /></city>
+        <country><xsl:value-of select="@country" /></country>
     </museum>
 </xsl:template>
 
