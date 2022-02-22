@@ -13,6 +13,7 @@
             <xsl:value-of select="@city" />
             (<xsl:value-of select="@country" />)
         </xsl:attribute>
+        <xsl:value-of select="@name" />
     </museum>
 </xsl:template>
 
