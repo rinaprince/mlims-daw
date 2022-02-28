@@ -8,18 +8,20 @@
     </xsl:template>
 
     <xsl:template match="museum">
-        <name>
-            <xsl:value-of select="name" />
-        </name>
-        <location>
-            <xsl:attribute name="city">
-                <xsl:value-of select="city" />
-            </xsl:attribute>
+        <museum>
+            <name>
+                <xsl:value-of select="name" />
+            </name>
+            <location>
+                <xsl:attribute name="city">
+                    <xsl:value-of select="city" />
+                </xsl:attribute>
 
-            <xsl:attribute name="country">
-                <xsl:value-of select="country" />
-            </xsl:attribute>
-        </location>
+                <xsl:attribute name="country">
+                    <xsl:value-of select="country" />
+                </xsl:attribute>
+            </location>
+        </museum>
     </xsl:template>
 
 </xsl:stylesheet>
