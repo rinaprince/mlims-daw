@@ -1,0 +1,6 @@
+Task calculator:
+Implement a web page tha, given two numbers, calculates the product or division according to the button clicked by the user.
+
+Implement in HTML: First number: (input)
+                   Second number: (input)
+                   Result: Multiply and Divide (buttons)
