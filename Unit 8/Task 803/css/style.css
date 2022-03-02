@@ -1,0 +1,19 @@
+html{
+    background-color: rgb(212, 233, 252);
+    text-align: center;
+}
+
+body{
+    background-color: aliceblue;
+    padding: 5%;
+    margin: 5%;
+}
+
+h1{
+    color: blue;
+    text-transform: uppercase;
+}
+
+ul > li{
+    list-style: none;
+}
