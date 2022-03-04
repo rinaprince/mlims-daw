@@ -45,10 +45,10 @@ function main() {
     multiplyButton.addEventListener('click', multiply); //To run the button
     divideButton.addEventListener('click', divide); //To run the button
 
-    let divHistory = document.createElement('div'); 
-    divHistory.className = "History";
-    divHistory.innerHTML = "sum, multiply, divide"
-    document.body.append(div);
+    //let divHistory = document.createElement('div'); 
+    //divHistory.className = "History";
+    //divHistory.innerHTML = "sum, multiply, divide"
+    //document.body.append(div);
 }
 
 document.addEventListener('DOMContentLoaded', main);
