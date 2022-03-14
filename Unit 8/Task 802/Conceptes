@@ -7,3 +7,4 @@ Page events: DOMContentLoaded (The browser fully loaded HTML. When the DOM is re
 Creating elements: document.createElement(tag)
                    document.createElement(div)
 Insertion methods: node.append(...nodes or strings)
+querySelector/All
