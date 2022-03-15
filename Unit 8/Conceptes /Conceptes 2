@@ -1,0 +1,10 @@
+Objects: 8 data types. Seven are "primitive". To store keyed collections of various data an more complex entities. Created with "{}", inside an optional list.
+Empty object: let user = new Object();
+Literals and properties: let user ={        //an object
+                            name:"John",    //key name store value John
+                            age: 30         //key age store value 30
+                        };
+
+Accessing property values: alert(user.name);/ alert(user.age);
+                           alert(user["name"]);/alert(user[key]);
+For...in... loop: for (key in object){
