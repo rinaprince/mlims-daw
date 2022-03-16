@@ -7,4 +7,5 @@ Literals and properties: let user ={        //an object
 
 Accessing property values: alert(user.name);/ alert(user.age);
                            alert(user["name"]);/alert(user[key]);
-For...in... loop: for (key in object){
+For...in... loop: for (key in object){ //Per a recòrrer el valor de key i retorna el seu valor. Pots crear constructors i mètodes.
+No tot el codi ha d'estar dins de main, només allò que volem assegurar que s'execute.

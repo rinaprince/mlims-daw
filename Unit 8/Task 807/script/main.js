@@ -3,7 +3,8 @@
 "use strict";
 
 function main(){
-    let bookOne ={
+    //Creació d'objectes.
+    let bookOne ={ 
         title: "La sombra del viento",
         author: "Carlos Ruiz Zafón",
         publishedIn: 2001,
@@ -31,6 +32,7 @@ function main(){
         alreadyRead: true,
     };
 
+    //Array dels llibres.
     let books =[
         bookOne,
         bookTwo,
@@ -38,7 +40,8 @@ function main(){
         bookFour,
     ];
 
-    let one = document.createElement('p');
+    //Creació d'un 'p' al que se li afegixen dades al body individualment. Es pot fer amb un for.
+    /*let one = document.createElement('p');
     one.innerHTML = (bookOne.title + " by " + bookOne.author);
     document.body.append(one);
 
@@ -52,8 +55,23 @@ function main(){
 
     let four = document.createElement('p');
     four.innerHTML = (bookFour.title + " by " + bookFour.author);
-    document.body.append(four);
+    document.body.append(four);*/
 
+    /*Bucle for que recorre l'array books. Es crea una variable book al que se li dona el valor
+    book. Després, es crea un element 'p' que mostra un missatge o un altre depenent si és false o true el seu valor.*/
+    for (let i = 0; i < books.length; i++){
+        let book = books[i];
+        if (book.alreadyRead == true){
+            let message = document.createElement('p');
+            message.innerHTML = (" You already read " + book.title + " by " + book.author);
+            document.body.append(message);
+        }
+        else{
+            let message = document.createElement('p');
+            message.innerHTML = ("You still need to read " + book.title + " by " + book.author);
+            document.body.append(message);
+        }
+    } 
 }
 
 document.addEventListener('DOMContentLoaded', main);
