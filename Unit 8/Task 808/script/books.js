@@ -21,6 +21,8 @@ function main(){
             document.body.append(message);
         }
     } 
+
+    
 }
 
 document.addEventListener('DOMContentLoaded', main);
