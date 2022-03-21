@@ -40,6 +40,13 @@ let bookFive ={
     alreadyRead: false,
 };
 
+let bookSix ={
+    title: "Un cadáver en la bilioteca",
+    author: "Agatha Christie",
+    publishedIn: 1942,
+    alreadyRead: false,
+};
+
 //Array dels llibres.
 let books =[
     bookOne,

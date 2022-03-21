@@ -11,7 +11,7 @@ function main(){
         document.body.append(checkbox);
     }
 
-    let array = new Array(); //Declaration 
+    //let array = new Array(); //Declaration 
 
 }
 

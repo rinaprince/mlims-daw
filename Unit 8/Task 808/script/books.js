@@ -22,7 +22,23 @@ function main(){
         }
     } 
 
-    
+    //Show the number of books.
+    let number = document.querySelectorAll('p');
+    alert(number.length);
+
+    //Show the list of books.
+
+    let buttonOne = document.querySelector('#button_one');
+    document.body.append(buttonOne); //Set the button at the end
+
+    let buttonTwo = document.querySelector('#button_two');
+    document.body.append(buttonTwo); //Set the button at the end
+
+    //Add a book.
+
+    books.push("bookSix");
+
+    //Delete a book.
 }
 
 document.addEventListener('DOMContentLoaded', main);
