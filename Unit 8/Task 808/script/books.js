@@ -36,7 +36,7 @@ function main(){
 
     //Add a book.
 
-    books.push("bookSix");
+    
 
     //Delete a book.
 }
