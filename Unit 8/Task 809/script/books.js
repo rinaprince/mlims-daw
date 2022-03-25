@@ -10,7 +10,7 @@ let bookOne ={
     author: "Carlos Ruiz Zafón",
     publishedIn: 2001,
     alreadyRead: true,
-    cover: '1-lsdv',
+    cover: '1-lsdv.jpg',
 };
 
 let bookTwo ={
@@ -18,7 +18,7 @@ let bookTwo ={
     author: "Carlos Ruiz Zafón",
     publishedIn: 2008,
     alreadyRead: true,
-    cover: '2-ejda',
+    cover: '2-ejda.jpg',
 };
 
 let bookThree ={
@@ -26,7 +26,7 @@ let bookThree ={
     author: "Carlos Ruiz Zafón",
     publishedIn: 2011,
     alreadyRead: true,
-    cover: '3-epdc',
+    cover: '3-epdc.jpg',
 };
 
 let bookFour ={
@@ -34,7 +34,7 @@ let bookFour ={
     author: "Carlos Ruiz Zafón",
     publishedIn: 2016,
     alreadyRead: true,
-    cover: '4-elde',
+    cover: '4-elde.jpg',
 };
 
 let bookFive ={
@@ -42,7 +42,7 @@ let bookFive ={
     author: "Agatha Christie",
     publishedIn: 1952,
     alreadyRead: false,
-    cover: '5-etde',
+    cover: '5-etde.jpg',
 };
 
 let bookSix ={
@@ -50,7 +50,7 @@ let bookSix ={
     author: "Agatha Christie",
     publishedIn: 1942,
     alreadyRead: false,
-    cover: '6-ucelb',
+    cover: '6-ucelb.jpg',
 };
 
 //Array dels llibres.

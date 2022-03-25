@@ -9,3 +9,4 @@ Accessing property values: alert(user.name);/ alert(user.age);
                            alert(user["name"]);/alert(user[key]);
 For...in... loop: for (key in object){ //Per a recòrrer el valor de key i retorna el seu valor. Pots crear constructors i mètodes.
 No tot el codi ha d'estar dins de main, només allò que volem assegurar que s'execute.
+innerHTML: to change the value of an element of the HTML
