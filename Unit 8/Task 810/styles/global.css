@@ -1,0 +1,15 @@
+body{
+  background-color: rgb(210, 240, 245);
+  text-align: center;
+}
+
+h1{
+  text-transform: uppercase;
+  color: blue;
+}
+
+div { 
+  padding: 0.5em;   
+}
+
+#btn-remove-last, #btn-remove-first { background-color: rgb(70, 209, 252);}
