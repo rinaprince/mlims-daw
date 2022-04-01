@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Books - Demo</title>
+        <link href="styles/global.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Task Demo</h1>
+        <div id="books"></div>
+        <script type="text/javascript">
+            //cookies - client/servidor
+            //sessions - servidor
+            //localStorage i sessionStorage - client
+            let aux = localStorage.getItem("counter");
+            let counter;
+
+            if (aux === null){
+                counter = {visit: 0};
+            }else{
+                 counter = JSON.parse(aux);
+            }
+            counter.visit++;
+
+            let counterSerialized = JSON.stringify(counter);
+            localStorage.setItem("counter", counterSerialized);
+
+
+            //let text = "This is your first visit #" + counter;
+            let text = `This is your first visit #${counter.visit}`;
+
+            let p = document.createElement('p');
+            p.innerHTML = text;
+
+            document.body.append(p);
+        </script>
+    </body>
+</html>
